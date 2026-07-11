@@ -1,0 +1,148 @@
+﻿import type { PortfolioItem } from "@/lib/content-types";
+
+export const portfolioItems: PortfolioItem[] = [
+  {
+    id: "p1",
+    title: "Soft French tips",
+    image: {
+      src: "/images/portfolio/nail-1.jpg",
+      alt: "Soft French manicure on short nails",
+      width: 800,
+      height: 1000,
+    },
+    categories: ["french", "short"],
+    sortOrder: 1,
+  },
+  {
+    id: "p2",
+    title: "Blush gel set",
+    image: {
+      src: "/images/portfolio/nail-2.jpg",
+      alt: "Blush pink gel manicure",
+      width: 800,
+      height: 1000,
+    },
+    categories: ["gel", "short"],
+    sortOrder: 2,
+  },
+  {
+    id: "p3",
+    title: "Floral nail art",
+    image: {
+      src: "/images/portfolio/nail-3.jpg",
+      alt: "Delicate floral nail art on medium nails",
+      width: 800,
+      height: 1000,
+    },
+    categories: ["nail-art", "gel"],
+    sortOrder: 3,
+  },
+  {
+    id: "p4",
+    title: "Long almond glam",
+    image: {
+      src: "/images/portfolio/nail-4.jpg",
+      alt: "Long almond-shaped gel extensions",
+      width: 800,
+      height: 1000,
+    },
+    categories: ["long", "gel"],
+    sortOrder: 4,
+  },
+  {
+    id: "p5",
+    title: "Classic French long",
+    image: {
+      src: "/images/portfolio/nail-5.jpg",
+      alt: "Classic French tips on long nails",
+      width: 800,
+      height: 1000,
+    },
+    categories: ["french", "long"],
+    sortOrder: 5,
+  },
+  {
+    id: "p6",
+    title: "Minimal chrome art",
+    image: {
+      src: "/images/portfolio/nail-6.jpg",
+      alt: "Minimal chrome accent nail art",
+      width: 800,
+      height: 1000,
+    },
+    categories: ["nail-art", "short"],
+    sortOrder: 6,
+  },
+  {
+    id: "p7",
+    title: "Sheer nude gel",
+    image: {
+      src: "/images/portfolio/nail-7.jpg",
+      alt: "Sheer nude gel manicure on short nails",
+      width: 800,
+      height: 1000,
+    },
+    categories: ["gel", "short"],
+    sortOrder: 7,
+  },
+  {
+    id: "p8",
+    title: "Statement art set",
+    image: {
+      src: "/images/portfolio/nail-8.jpg",
+      alt: "Bold nail art on long nails",
+      width: 800,
+      height: 1000,
+    },
+    categories: ["nail-art", "long"],
+    sortOrder: 8,
+  },
+  {
+    id: "p9",
+    title: "Milky French",
+    image: {
+      src: "/images/portfolio/nail-9.jpg",
+      alt: "Milky French manicure",
+      width: 800,
+      height: 1000,
+    },
+    categories: ["french", "gel"],
+    sortOrder: 9,
+  },
+  {
+    id: "p10",
+    title: "Short square polish",
+    image: {
+      src: "/images/portfolio/nail-10.jpg",
+      alt: "Short square natural manicure",
+      width: 800,
+      height: 1000,
+    },
+    categories: ["short"],
+    sortOrder: 10,
+  },
+  {
+    id: "p11",
+    title: "Long soft glam",
+    image: {
+      src: "/images/portfolio/nail-11.jpg",
+      alt: "Long soft glam gel set",
+      width: 800,
+      height: 1000,
+    },
+    categories: ["long", "gel"],
+    sortOrder: 11,
+  },
+  {
+    id: "p12",
+    title: "Artful accents",
+    image: {
+      src: "/images/portfolio/nail-12.jpg",
+      alt: "Accent nail art details",
+      width: 800,
+      height: 1000,
+    },
+    categories: ["nail-art", "french"],
+    sortOrder: 12,
+  },
+];
