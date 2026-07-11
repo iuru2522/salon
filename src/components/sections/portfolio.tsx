@@ -4,7 +4,6 @@ import { useMemo, useState } from "react";
 import Image from "next/image";
 import { FadeIn } from "@/components/fade-in";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { Skeleton } from "@/components/ui/skeleton";
 import { portfolioItems } from "@/content/portfolio";
 import type { PortfolioCategory } from "@/lib/content-types";
 import { filterPortfolioItems, portfolioFilters } from "@/lib/portfolio";
@@ -66,13 +65,12 @@ export function PortfolioSection() {
               <FadeIn key={item.id} delay={index * 0.03} className="mb-4 break-inside-avoid">
                 <figure className="group relative overflow-hidden rounded-3xl bg-rose-50 dark:bg-stone-900">
                   <div className="relative aspect-[4/5] w-full">
-                    <Skeleton className="absolute inset-0 rounded-none" />
                     <Image
                       src={item.image.src}
                       alt={item.image.alt}
                       fill
                       loading="lazy"
-                      className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                      className="z-[1] object-cover transition duration-500 group-hover:scale-[1.03]"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>

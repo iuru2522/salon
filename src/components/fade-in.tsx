@@ -3,6 +3,10 @@
 import type { ReactNode } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 
+/**
+ * Subtle enter motion only — never hides children with opacity:0.
+ * Older iOS Safari often misses whileInView, which left images invisible.
+ */
 export function FadeIn({
   children,
   className,
@@ -21,10 +25,10 @@ export function FadeIn({
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, y: 18 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.55, ease: "easeOut", delay }}
+      initial={{ y: 12 }}
+      whileInView={{ y: 0 }}
+      viewport={{ once: true, amount: 0.01 }}
+      transition={{ duration: 0.4, ease: "easeOut", delay }}
     >
       {children}
     </motion.div>

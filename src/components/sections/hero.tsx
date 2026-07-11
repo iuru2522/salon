@@ -20,10 +20,13 @@ export function HeroSection() {
           alt={studio.heroImage.alt}
           fill
           priority
-          className="object-cover"
+          className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#fbf7f3]/95 via-[#fbf7f3]/78 to-[#fbf7f3]/25 dark:from-stone-950/95 dark:via-stone-950/75 dark:to-stone-950/30" />
+        {/* Mobile: keep the photo visible; fade up from the bottom behind copy */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#fbf7f3] via-[#fbf7f3]/75 to-[#fbf7f3]/15 dark:from-stone-950 dark:via-stone-950/75 dark:to-stone-950/20 sm:hidden" />
+        {/* Desktop: soft side wash for text readability */}
+        <div className="absolute inset-0 hidden bg-gradient-to-r from-[#fbf7f3]/95 via-[#fbf7f3]/70 to-[#fbf7f3]/15 dark:from-stone-950/95 dark:via-stone-950/70 dark:to-stone-950/15 sm:block" />
       </div>
       <div className="relative mx-auto flex min-h-[88vh] max-w-6xl flex-col justify-center px-4 py-24 sm:px-6">
         <FadeIn className="max-w-xl space-y-6">
