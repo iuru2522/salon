@@ -6,7 +6,7 @@
 ## Prerequisites
 
 - Node.js 20+
-- npm (or pnpm/yarn)
+- pnpm
 - Modern browser
 - (Optional) Resend API key for real email delivery
 
@@ -14,7 +14,7 @@
 
 ```bash
 # From repository root after the Next.js app is scaffolded
-npm install
+pnpm install
 cp .env.example .env.local
 ```
 
@@ -29,7 +29,7 @@ NEXT_PUBLIC_SITE_URL=http://localhost:3000
 Without `RESEND_API_KEY`, valid contact posts should still return success in development (logged only).
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
@@ -78,17 +78,17 @@ Open [http://localhost:3000](http://localhost:3000).
 ## Automated checks (once wired)
 
 ```bash
-npm run test          # unit: filter helper + zod schema
-npm run test:e2e      # Playwright journeys V1–V4 critical paths
-npm run lint
-npm run build
+pnpm test          # unit: filter helper + zod schema
+pnpm test:e2e      # Playwright journeys V1–V4 critical paths
+pnpm lint
+pnpm build
 ```
 
 ## Expected outcomes
 
 | Check | Expected |
 |-------|----------|
-| `npm run build` | Succeeds with no type errors |
+| `pnpm build` | Succeeds with no type errors |
 | Homepage Lighthouse-ish feel | Fast first content; lazy images below fold |
 | Contact without API key (dev) | UI success path still completable |
 | Privacy / Terms links | Resolve to simple pages |

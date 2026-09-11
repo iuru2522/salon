@@ -27,7 +27,7 @@
 - [x] T001 Scaffold Next.js App Router + TypeScript app at repository root with `app/` and `src/` directories per `plan.md`
 - [x] T002 Install primary dependencies (Tailwind CSS, Framer Motion, Lucide React, next-themes, zod) and initialize shadcn/ui in `components.json` + `src/components/ui/`
 - [x] T003 [P] Add `.env.example` with `CONTACT_TO_EMAIL`, `RESEND_API_KEY`, `NEXT_PUBLIC_SITE_URL` and create `public/images/` placeholder folders (hero, about, portfolio, reviews, instagram)
-- [x] T004 [P] Configure ESLint/Prettier (or Next defaults) and ensure `npm run lint` / `npm run build` scripts work from `package.json`
+- [x] T004 [P] Configure ESLint/Prettier (or Next defaults) and ensure `pnpm lint` / `pnpm build` scripts work from `package.json`
 
 ---
 
@@ -46,7 +46,7 @@
 - [x] T011 Implement site chrome stubs: `src/components/layout/site-header.tsx`, `src/components/layout/mobile-nav.tsx`, `src/components/layout/theme-toggle.tsx`, `src/components/layout/site-footer.tsx` with nav anchors from `contracts/ui-sections.md`
 - [x] T012 Compose landing page shell with ordered section placeholders and stable section `id`s in `app/page.tsx`
 
-**Checkpoint**: Foundation ready â€” `npm run dev` shows themed layout chrome and empty section anchors
+**Checkpoint**: Foundation ready â€” `pnpm dev` shows themed layout chrome and empty section anchors
 
 ---
 
@@ -140,7 +140,7 @@
 - [x] T044 [P] Emit JSON-LD `NailSalon`/`LocalBusiness` script from studio content in `app/layout.tsx` or `src/components/seo/json-ld.tsx`
 - [x] T045 [P] Add Open Graph image route or static asset via `app/opengraph-image.tsx` (or `public/og.png`)
 - [x] T046 Optimize hero LCP (priority image, font loading) in `src/components/sections/hero.tsx` and `app/layout.tsx`
-- [x] T047 Run `specs/001-nail-landing-page/quickstart.md` manual scenarios V1â€“V5 and fix any gaps; confirm `npm run lint` and `npm run build` succeed
+- [x] T047 Run `specs/001-nail-landing-page/quickstart.md` manual scenarios V1â€“V5 and fix any gaps; confirm `pnpm lint` and `pnpm build` succeed
 
 ---
 

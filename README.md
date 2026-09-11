@@ -5,9 +5,9 @@ Luxury appointment-only nail technician landing page built with Next.js, TypeScr
 ## Quick start
 
 ```bash
-npm install
+pnpm install
 cp .env.example .env.local
-npm run dev
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
@@ -16,10 +16,10 @@ Optional: set `NEXT_PUBLIC_SITE_URL` in `.env.local` for production canonical/SE
 
 ## Scripts
 
-- `npm run dev` — local development
-- `npm run build` — production build
-- `npm run start` — serve production build
-- `npm run lint` — ESLint
+- `pnpm dev` — local development
+- `pnpm build` — production build
+- `pnpm start` — serve production build
+- `pnpm lint` — ESLint
 
 ## Spec Kit
 
